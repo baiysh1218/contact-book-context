@@ -34,30 +34,36 @@ const Edit = () => {
     navigate("/");
   }
   return (
-    <div>
+    <div className="block-edit">
       {oneData ? (
-        <div>
+        <div className="block-edit-block">
           <input
+            className="inp-edit"
             value={name}
             onChange={e => setName(e.target.value)}
             type="text"
           />
           <input
+            className="inp-edit"
             value={lastName}
             onChange={e => setLastName(e.target.value)}
             type="text"
           />
           <input
+            className="inp-edit"
             value={num}
             type="number"
             onChange={e => setNum(e.target.value)}
           />
           <input
+            className="inp-edit"
             value={image}
             onChange={e => setImage(e.target.value)}
             type="text"
           />
-          <button onClick={() => handleSave()}>Save</button>
+          <button className="btn-edit-save" onClick={() => handleSave()}>
+            Save
+          </button>
         </div>
       ) : (
         <h2>Loading...</h2>

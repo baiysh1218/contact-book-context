@@ -8,14 +8,21 @@ const Card = ({ item, deleteData }) => {
       <div className="item-data">{item.name}</div>
       <div className="item-data">{item.lastName}</div>
       <div className="item-data">{item.num}</div>
-      <img className="item-data" alt="IMG" src={item.image} width="250px" />
-      <Link to={`/edit/${item.id}`} className="btn-edit">
+      <img
+        className="item-data img-item"
+        alt="IMG"
+        src={item.image}
+        width="250px"
+      />
+      <Link to={`/edit/${item.id}`} className="btn-edit btn-add-card">
         Edit
       </Link>
-      <button onClick={() => deleteData(item.id)} className="btn-delete">
+      <button
+        onClick={() => deleteData(item.id)}
+        className="btn-delete btn-add-card">
         Delete
       </button>
-      <Link to={`/details/${item.id}`} className="btn-edit">
+      <Link to={`/details/${item.id}`} className="btn-edit btn-add-card">
         details
       </Link>
     </div>

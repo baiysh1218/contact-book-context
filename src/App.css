@@ -115,3 +115,41 @@ h5 {
 p {
   margin-top: 20px;
 }
+.block-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.block-edit-block {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(93, 176, 179);
+  padding: 5%;
+  border-radius: 10px;
+}
+.inp-edit {
+  margin: 4%;
+  padding: 5%;
+  background-color: aliceblues;
+  border: 2px solid burlywood;
+  border-radius: 10px;
+}
+.btn-edit-save {
+  margin: 4%;
+  padding: 5%;
+  background-color: rgb(41, 162, 22);
+  border: 2px solid rgb(80, 57, 28);
+  border-radius: 10px;
+  color: white;
+}
+.img-item {
+  margin-left: 25%;
+}
+.btn-add-card {
+  margin-left: 9%;
+}
+.item-data {
+  font-size: 30px;
+  margin-bottom: 5%;
+}
